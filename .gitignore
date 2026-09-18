@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+
+# Data - never upload raw datasets to GitHub
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model checkpoints - too large for GitHub
+checkpoints/*
+!checkpoints/.gitkeep
+
+# Results
+results/figures/*
+results/metrics/*
+!results/figures/.gitkeep
+!results/metrics/.gitkeep
+
+# Mac specific
+.DS_Store
+.AppleDouble
+
+# Wandb / experiment tracking
+wandb/
+mlruns/
+
+# IDE
+.vscode/
+.idea/
+*.swp
